@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
 
-    // Check existing username/email
+
     if (empty($errors)) {
 
         $stmt = $conn->prepare(
@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
 
-    // Insert user
+    
     if (empty($errors)) {
 
         $password_hash = password_hash($password, PASSWORD_DEFAULT);
